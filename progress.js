@@ -7,7 +7,15 @@ const names= [
 let result = names.filter(name => name.age> 20).map(name => {
     return{
         namess: name.name, 
-        percentage : name.age + 2 
+        percentage : name.age + 5 
     }
 })
 console.log(result);
+
+let nam = names.filter(na =>na.age == 15).map( na => {
+    return{
+        name: na.name, 
+        age: na.age+ 3
+    }
+})
+console.log(nam); 
